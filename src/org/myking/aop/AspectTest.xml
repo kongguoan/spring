@@ -9,5 +9,5 @@
           <context:annotation-config/>
    <context:component-scan base-package="org.myking"></context:component-scan>
    <bean class="org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator" />
-   <bean id="asptest" class="org.myking.aop.AspectTest" />
+ 
 </beans>
