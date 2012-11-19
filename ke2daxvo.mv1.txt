@@ -1,0 +1,35 @@
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch mybranch
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   spring/bin/.project
+#	new file:   spring/bin/src/org/myking/aop/AspectTest.class
+#	new file:   spring/bin/src/org/myking/aop/AspectTest.xml
+#	new file:   spring/bin/src/org/myking/aop/MainTest.class
+#	new file:   spring/bin/src/org/myking/aop/ServiceAImpl.class
+#	new file:   spring/bin/src/org/myking/aop/ServiceIF.class
+#	new file:   spring/org/myking/aop/AspectTest.java
+#	new file:   spring/org/myking/aop/AspectTest.xml
+#	new file:   spring/org/myking/aop/MainTest.java
+#	new file:   spring/org/myking/aop/ServiceAImpl.java
+#	new file:   spring/org/myking/aop/ServiceIF.java
+#
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   .gradle/1.2/taskArtifacts/cache.properties
+#	modified:   .gradle/1.2/taskArtifacts/fileHashes.bin
+#	modified:   .gradle/1.2/taskArtifacts/fileSnapshots.bin
+#	modified:   .gradle/1.2/taskArtifacts/outputFileStates.bin
+#	modified:   .gradle/1.2/taskArtifacts/taskArtifacts.bin
+#	deleted:    spring/src/org/myking/aop/AspectTest.java
+#	deleted:    spring/src/org/myking/aop/AspectTest.xml
+#	deleted:    spring/src/org/myking/aop/MainTest.java
+#	deleted:    spring/src/org/myking/aop/ServiceAImpl.java
+#	deleted:    spring/src/org/myking/aop/ServiceIF.java
+#
+
