@@ -43,7 +43,7 @@ public class AspectTest {
 	}
 	@Pointcut (value="within(* org.myking.*.Service*.*(..))")
     public void pointCut(JoinPoint jp) {  
-		System.out.println("pointCut");
+		System.out.println("pointCut  ");
     }  
   
  
