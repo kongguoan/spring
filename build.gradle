@@ -1,26 +1,33 @@
-
- apply plugin: 'java'
-  apply plugin: 'eclipse'
-sourceSets {
-    main {
-        java {
+//gradle cleanEclipse eclipse -x :eclipse
+  configure(allprojects) {
+     apply plugin: 'java'
+   	 apply plugin: 'eclipse'
+   	 group = 'org.myking'
+     repositories {
+     		  mavenCentral()
+        	maven { url "http://repo.springsource.org/libs-release" }
+        	maven { url "http://repo.springsource.org/release" }
+        	maven { url "http://repo.springsource.org/ebr-maven-external" }
+    }
+  }
+  project('spring') {
+    description = 'Spring simple'
+  	sourceSets {
+   		 main {
+       	 java {
              srcDirs 'src'
-        }
-     
-    }
-
-}
-  
-    repositories {
-      mavenCentral()
-        maven { url "http://repo.springsource.org/libs-release" }
-        maven { url "http://repo.springsource.org/release" }
-        maven { url "http://repo.springsource.org/ebr-maven-external" }
-    }
-   dependencies {
+        	}
+   	 	}
+		}
+		dependencies {
          testCompile group: 'junit', name: 'junit', version: '4.8.2'
           compile group: 'org.springframework', name: 'spring-context', version: '3.1.3.RELEASE'
            compile group: 'org.springframework', name: 'spring-aop', version: '3.1.3.RELEASE'
             compile("org.aspectj:aspectjweaver:1.6.12")
     }
+  }
+
+  
+
+
 
