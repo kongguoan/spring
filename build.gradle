@@ -1,5 +1,15 @@
  apply plugin: 'java'
   apply plugin: 'eclipse'
+sourceSets {
+    main {
+        java {
+             srcDirs 'src'
+        }
+     
+    }
+
+}
+  
     repositories {
       mavenCentral()
         maven { url "http://repo.springsource.org/libs-release" }
