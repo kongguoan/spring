@@ -26,6 +26,14 @@
             compile("org.aspectj:aspectjweaver:1.6.12")
     }
   }
+javadoc{
+	 options.addStringOption("encoding", "UTF-8")
+  options.addStringOption("charset", "UTF-8")
+}
+jar{
+	baseName="jarName"
+	from(sourceSets.main.java)
+}
 project('spring-security') {
     description = 'spring-security'
     apply plugin: 'war'
@@ -40,12 +48,7 @@ project('spring-security') {
 		eclipse{
 	wtp{
 	component {
-		println sourceDirs 
-		println "resources============================="
-			println resources
 		 resource sourcePath: 'webapp', deployPath: '/'
-	println "resources============================="
-		println resources
 	}
 	}
 }
